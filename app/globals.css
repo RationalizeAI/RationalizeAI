@@ -1,0 +1,81 @@
+/* Apply mysterious background & styling */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background: #000; /* fallback to black */
+  font-family: 'Lucida Sans', Arial, sans-serif;
+  color: #eee;
+}
+
+/* If you have a background image, you can use it like so:
+body {
+  background: url('/images/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-shadow: 0 0 5px rgba(150, 0, 255, 0.7);
+}
+
+a {
+  color: #b66eff;
+  text-decoration: none;
+}
+
+button {
+  background: #b66eff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.7em 1.2em;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 0 10px #b66eff;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #d495ff;
+  box-shadow: 0 0 15px #d495ff;
+}
+
+input {
+  padding: 0.7em;
+  border-radius: 5px;
+  border: 1px solid #444;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 1em;
+  background-color: #111;
+  color: #eee;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.formBox {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2em;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+}
